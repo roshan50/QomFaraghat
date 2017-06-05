@@ -1,0 +1,380 @@
+/*.box{
+	width: 200px;
+	height: 200px;
+	background: purple;
+	border: 5px solid red;
+	padding: 10px;
+
+	margin: 0px auto;
+}*/
+@font-face{
+	font-family: iransans;
+	src: url(./_assets/fonts/IRANSansWeb.woff);
+}
+
+body,html{
+	margin: 0px;
+	width: 100%;
+	height: 100%;
+	padding: 0px;
+	background: #f8f8f8;
+}
+
+*{
+	direction: rtl;
+	box-sizing: border-box;
+}
+
+img{
+	padding: 0;
+	margin: 0;
+}
+
+header{
+	width: 100%;
+	/*border: 1px solid blue;*/
+	display: flex;
+	justify-content: center;
+	/*font-family: maryam;*/
+	margin-bottom: 50px;
+}
+
+.myheader{
+	width: 1200px;
+	position: relative;
+}
+
+.header--def{
+	display: flex;
+	width: 100%;
+	/*border: 1px solid orange;*/
+	background: #CCC;
+}
+
+.header__faraghat{
+	margin-right: 50px;
+}
+
+.header--top-menu{
+	width: 100%;
+	/*border: 1px solid red;*/
+}
+
+.logo{
+	position: absolute;
+	top: 0;
+	left: 50px;
+	/*border: 1px solid yellow;*/
+}
+
+.menu{
+	height: 50px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	font-family: iransans;
+	margin-right: 50px;
+}
+
+.menu--item{
+	padding: 5px;
+	color: black;
+	margin: 0px 2px;
+	/*border: 1px solid purple;*/
+	height: 30px;
+/*	display: flex;
+	align-items: center;*/
+}
+
+.slider{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	/*border: 1px solid red;*/
+}
+
+.slider--item{
+	width: calc( 100% / 3);
+}
+
+.content{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	/*border: 1px solid purple;*/
+}
+.wraper{
+	width: 1200px;
+}
+.search{
+	/*border: 1px solid red;*/
+	background-color: lightgray;
+}
+.search--top-bar{
+	display: flex;
+	position: relative;
+}
+.search--input__div{
+	width: 100%;
+	box-shadow: 1px 0px 5px #c2c2c2;
+	border-radius: 5px;
+}
+.search--input{
+	width: 100%;
+	height: 55px;
+	border: 0;
+	outline: 0;
+	border-radius: 5px;
+	padding-right: 20px;
+	font-family: iransans;
+	font-size: 21px;
+	font-weight: 700;
+}
+.search--icon{
+	position: absolute;
+	left:20px;
+	top:13px;
+	width: 35px;
+	height: 30px;
+}
+.search--icon--image{
+	opacity: 0.5;
+}
+.search--content{
+	width: 100%;
+}
+.search--inner-content{
+	display: inline-flex;
+	padding: 15px;
+	box-shadow: 1px 0px 5px #c2c2c2;
+	border-radius: 5px;
+	width: 100%;
+}
+.search--inner-title{
+	border-bottom: 1px solid gray;
+	font-family: iransans;
+	font-size: 20px;
+	font-weight: 700;
+}
+.search--gender{
+	/*border: 1px solid red;*/
+	padding: 25px;
+	width: 25%;
+}
+
+
+
+input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label {
+    color:gray;
+    font-family:iransans;
+}
+
+input[type="radio"] + label span {
+    display:inline-block;
+    width:19px;
+    height:19px;
+    margin:-2px 10px 0 0;
+    vertical-align:middle;
+    /*background:url(./_assets/imgs/check_radio_sheet.png) -38px top no-repeat;*/
+		background:url(./_assets/imgs/checkbox_unchecked.png) no-repeat;
+		cursor:pointer;
+}
+
+input[type="radio"]:checked + label span {
+    /*background:url(./_assets/imgs/check_radio_sheet.png) -57px top no-repeat;*/
+		background:url(./_assets/imgs/checkbox_checked.png) no-repeat;
+}
+
+.radio--row{
+	display: flex;
+	justify-content: center;
+	font-family:iransans;
+}
+.search--audiance{
+	/*border: 1px solid pink;*/
+	padding: 25px;
+	width: 25%;
+}
+.search--plan{
+	/*border: 1px solid blue;*/
+	padding: 25px;
+	width: 25%;
+}
+.search--organ{
+	/*border: 1px solid yellow;*/
+	padding: 25px;
+	width: 25%;
+}
+
+.terms--title{
+	font-family: iransans;
+	font-size: 20px;
+	padding: 20px 2px;
+}
+.terms--contents {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+	/*border: 1px solid blue;*/
+
+}
+.terms--contents--item{
+	/*border: 1px solid orange;*/
+	width: 313px;
+	height: 350px;
+	margin: 20px 10px;
+	box-shadow: 1px 0px 5px #c2c2c2;
+	border-radius: 5px;
+	position: relative;
+}
+.box--img{
+	/*border: 1px solid red;*/
+	width: 100%;
+	height: 190px;
+	border-radius: 5px;
+}
+.box--content{
+	border: 1px solid lightgray;
+	width: 100%;
+	height: 130px;
+	font-family: iransans;
+	padding: 10px;
+}
+.box--content--title{
+	font-size: 20px;
+	color: blue;
+}
+.box--content--time-cost{
+	display: flex;
+	position: relative;
+}
+.box--content--cost{
+	position: absolute;
+	left: 2px
+		/*color: green;*/
+}
+.box--date{
+	background-color: lightgray;
+	box-shadow: 1px 0px 5px #c2c2c2;
+	border-radius: 0 5px 0 5px;
+	width: 100%;
+	height: 30px;
+	display: flex;
+
+}
+.box--date__start{
+	border: 1px solid gray;
+	border-radius: 0 0 5px 0;
+	width: 50%;
+	text-align: center;
+	padding-top: 5px;
+}
+.box--date__end{
+	border: 1px solid gray;
+	border-radius: 0 0 0 5px;
+	width: 50%;
+	text-align: center;
+	padding-top: 5px;
+}
+.box--logo{
+	position: absolute;
+	left: 17px;
+	top:160px;
+	width: 53px;
+	height: 53px;
+	border: 1px solid lightgray;
+	box-shadow: 1px 0px 5px #c2c2c2;
+	border-radius: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: white;
+}
+.box--logo--img{
+
+}
+.terms--arrows{
+	display: flex;
+	justify-content: center;
+}
+
+footer{
+	display: flex;
+	justify-content: center;
+}
+.permission{
+	background-color: lightgray;
+	/*width: 1200px;*/
+	position: relative;
+}
+.permission--logo{
+	/*position: absolute;*/
+}
+.copy{
+	display: flex;
+	position: relative;
+}
+.copy--navac{
+	display: flex;
+	position: absolute;
+	left:5px;
+	padding: 2px;
+}
+.navac--info{
+	padding: 5px;
+	position: relative;
+}
+.navac--info__en{
+	position: absolute;
+	left:2px;
+
+}
+
+
+.squaredFour {
+  width: 20px;
+  position: relative;
+  margin: 20px auto;
+  label {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #fcfff4;
+    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
+    border-radius: 4px;
+    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
+    &:after {
+      content: '';
+      width: 9px;
+      height: 5px;
+      position: absolute;
+      top: 4px;
+      left: 4px;
+      border: 3px solid #333;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      opacity: 0;
+      transform: rotate(-45deg);
+    }
+    &:hover::after {
+      opacity: 0.5;
+    }
+  }
+  input[type=radio] {
+    visibility: hidden;
+    &:checked + label:after {
+      opacity: 1;
+    }
+  }
+}
