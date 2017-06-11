@@ -52,11 +52,11 @@
 									جنسیت
 								</div>
 								<div class="search--radio">
-									<input id="m1" type="radio" name="gender" value="male" checked />
-									<label for="m1"><span></span> پسر</label>
+									<input id="male" type="radio" name="gender" value="male" checked />
+									<label for="male"><span></span> پسر</label>
 									<br>
-	  							<input id="m2" type="radio" name="gender" value="female">
-									<label for="m2"><span></span> دختر</label>
+	  							<input id="female" type="radio" name="gender" value="female">
+									<label for="female"><span></span> دختر</label>
 									<br>
 								</div>
 							</div>
@@ -64,14 +64,18 @@
 								<div class="search--inner-title">
 									گروه مخاطب
 								</div>
-								<div class="search--radio">
+								<div class="search--radio search--radio__audiance">
 									<div class="radio--row">
-										<input type="radio" name="audiance" value="male" checked> بزرگسالان<br>
-	  								<input type="radio" name="audiance" value="female"> جوانان<br>
+										<input id="adults" type="radio" name="audiance" value="adults" checked/>
+										<label for="adults"><span></span> بزرگسالان</label>
+	  								<input id="youngs" type="radio" name="audiance" value="youngs"/>
+										<label for="youngs"><span></span> جوانان</label>
 									</div>
 									<div class="radio--row">
-										<input type="radio" name="audiance" value="male" checked> نوجوانان<br>
-	  								<input type="radio" name="audiance" value="female"> کودکان<br>
+										<input id="youths" type="radio" name="audiance" value="youths"/>
+										<label for="youths"><span></span> نوجوانان</label>
+	  								<input id="children" type="radio" name="audiance" value="children"/>
+										<label for="children"><span></span>  کودکان</label>
 									</div>
 								</div>
 							</div>
@@ -79,11 +83,11 @@
 								<div class="search--inner-title">
 									محوریت برنامه
 								</div>
-								<div class="search--select">
-									<select>
+								<div class="search--plan--select">
+									<select name="plan" class="search--select">
 									 	<option value="media">رسانه و فضای مجازی</option>
-									 	<option value="saab">Saab</option>
-									 	<option value="audi">Audi</option>
+									 	<option value="saab">پلن 1</option>
+									 	<option value="audi">پلن 2</option>
 									</select>
 								</div>
 							</div>
@@ -91,8 +95,8 @@
 								<div class="search--inner-title">
 									سازمان برگزار کننده
 								</div>
-								<div class="search--input">
-									<input type="text" name="organ" value="" placeholder="نام سازمان را تایپ کنید...">
+								<div class="search--input-parent">
+									<input class="search--input__organ" type="text" name="organ" value="" placeholder="نام سازمان را تایپ کنید...">
 								</div>
 							</div>
 						</div>
@@ -103,14 +107,14 @@
 				<div class="terms--title">دوره ها</div>
 				<div class="terms--contents">
 					<div class="terms--contents--item">
-						<div class="box--img">
-							<img src="./_assets/imgs/item.jpg" alt="course">
+						<div class="box--img__div">
+							<img class="box--img" src="./_assets/imgs/item.jpg" alt="course">
 						</div>
 						<div class="box--content">
 							<div class="box--content--title">اردوی تفریحی سیاحتی</div>
 							<div class="box--content--time-cost">
 								<div class="box--content--time">مدت زمان: 30 ساعت</div>
-								<div class="box--content--cost">418000 تومان</div>
+								<div class="box--content--cost">25000 تومان</div>
 							</div>
 						</div>
 						<div class="box--date">
@@ -122,136 +126,152 @@
 						</div>
 					</div>
 					<div class="terms--contents--item">
-						<div class="box--img">
-							<img src="./_assets/imgs/item.jpg" alt="course">
+						<div class="box--img__div">
+							<img class="box--img" src="./_assets/imgs/item.jpg" alt="course">
 						</div>
 						<div class="box--content">
-							<div class="box--content--title"></div>
-							<div class="box--content--time"></div>
-							<div class="box--content--cost"></div>
+							<div class="box--content--title">اردوی تفریحی سیاحتی</div>
+							<div class="box--content--time-cost">
+								<div class="box--content--time">مدت زمان: 30 ساعت</div>
+								<div class="box--content--cost">25000 تومان</div>
+							</div>
 						</div>
 						<div class="box--date">
-							<div class="box--date__start"></div>
-							<div class="box--date__end"></div>
+							<div class="box--date__start"> از: 04/05/95</div>
+							<div class="box--date__end">تا: 04/05/95</div>
 						</div>
 						<div class="box--logo">
 							<img src="./_assets/imgs/box-logo.png" alt="" class="box--logo--img">
 						</div>
 					</div>
 					<div class="terms--contents--item">
-						<div class="box--img">
-							<img src="./_assets/imgs/item.jpg" alt="course">
+						<div class="box--img__div">
+							<img class="box--img" src="./_assets/imgs/item.jpg" alt="course">
 						</div>
 						<div class="box--content">
-							<div class="box--content--title"></div>
-							<div class="box--content--time"></div>
-							<div class="box--content--cost"></div>
+							<div class="box--content--title">اردوی تفریحی سیاحتی</div>
+							<div class="box--content--time-cost">
+								<div class="box--content--time">مدت زمان: 30 ساعت</div>
+								<div class="box--content--cost">25000 تومان</div>
+							</div>
 						</div>
 						<div class="box--date">
-							<div class="box--date__start"></div>
-							<div class="box--date__end"></div>
+							<div class="box--date__start"> از: 04/05/95</div>
+							<div class="box--date__end">تا: 04/05/95</div>
 						</div>
 						<div class="box--logo">
 							<img src="./_assets/imgs/box-logo.png" alt="" class="box--logo--img">
 						</div>
 					</div>
 					<div class="terms--contents--item">
-						<div class="box--img">
-							<img src="./_assets/imgs/item.jpg" alt="course">
+						<div class="box--img__div">
+							<img class="box--img" src="./_assets/imgs/item.jpg" alt="course">
 						</div>
 						<div class="box--content">
-							<div class="box--content--title"></div>
-							<div class="box--content--time"></div>
-							<div class="box--content--cost"></div>
+							<div class="box--content--title">اردوی تفریحی سیاحتی</div>
+							<div class="box--content--time-cost">
+								<div class="box--content--time">مدت زمان: 30 ساعت</div>
+								<div class="box--content--cost">25000 تومان</div>
+							</div>
 						</div>
 						<div class="box--date">
-							<div class="box--date__start"></div>
-							<div class="box--date__end"></div>
+							<div class="box--date__start"> از: 04/05/95</div>
+							<div class="box--date__end">تا: 04/05/95</div>
 						</div>
 						<div class="box--logo">
 							<img src="./_assets/imgs/box-logo.png" alt="" class="box--logo--img">
 						</div>
 					</div>
 					<div class="terms--contents--item">
-						<div class="box--img">
-							<img src="./_assets/imgs/item.jpg" alt="course">
+						<div class="box--img__div">
+							<img class="box--img" src="./_assets/imgs/item.jpg" alt="course">
 						</div>
 						<div class="box--content">
-							<div class="box--content--title"></div>
-							<div class="box--content--time"></div>
-							<div class="box--content--cost"></div>
+							<div class="box--content--title">اردوی تفریحی سیاحتی</div>
+							<div class="box--content--time-cost">
+								<div class="box--content--time">مدت زمان: 30 ساعت</div>
+								<div class="box--content--cost">25000 تومان</div>
+							</div>
 						</div>
 						<div class="box--date">
-							<div class="box--date__start"></div>
-							<div class="box--date__end"></div>
+							<div class="box--date__start"> از: 04/05/95</div>
+							<div class="box--date__end">تا: 04/05/95</div>
 						</div>
 						<div class="box--logo">
 							<img src="./_assets/imgs/box-logo.png" alt="" class="box--logo--img">
 						</div>
 					</div>
 					<div class="terms--contents--item">
-						<div class="box--img">
-							<img src="./_assets/imgs/item.jpg" alt="course">
+						<div class="box--img__div">
+							<img class="box--img" src="./_assets/imgs/item.jpg" alt="course">
 						</div>
 						<div class="box--content">
-							<div class="box--content--title"></div>
-							<div class="box--content--time"></div>
-							<div class="box--content--cost"></div>
+							<div class="box--content--title">اردوی تفریحی سیاحتی</div>
+							<div class="box--content--time-cost">
+								<div class="box--content--time">مدت زمان: 30 ساعت</div>
+								<div class="box--content--cost">25000 تومان</div>
+							</div>
 						</div>
 						<div class="box--date">
-							<div class="box--date__start"></div>
-							<div class="box--date__end"></div>
+							<div class="box--date__start"> از: 04/05/95</div>
+							<div class="box--date__end">تا: 04/05/95</div>
 						</div>
 						<div class="box--logo">
 							<img src="./_assets/imgs/box-logo.png" alt="" class="box--logo--img">
 						</div>
 					</div>
 					<div class="terms--contents--item">
-						<div class="box--img">
-							<img src="./_assets/imgs/item.jpg" alt="course">
+						<div class="box--img__div">
+							<img class="box--img" src="./_assets/imgs/item.jpg" alt="course">
 						</div>
 						<div class="box--content">
-							<div class="box--content--title"></div>
-							<div class="box--content--time"></div>
-							<div class="box--content--cost"></div>
+							<div class="box--content--title">اردوی تفریحی سیاحتی</div>
+							<div class="box--content--time-cost">
+								<div class="box--content--time">مدت زمان: 30 ساعت</div>
+								<div class="box--content--cost">25000 تومان</div>
+							</div>
 						</div>
 						<div class="box--date">
-							<div class="box--date__start"></div>
-							<div class="box--date__end"></div>
+							<div class="box--date__start"> از: 04/05/95</div>
+							<div class="box--date__end">تا: 04/05/95</div>
 						</div>
 						<div class="box--logo">
 							<img src="./_assets/imgs/box-logo.png" alt="" class="box--logo--img">
 						</div>
 					</div>
 					<div class="terms--contents--item">
-						<div class="box--img">
-							<img src="./_assets/imgs/item.jpg" alt="course">
+						<div class="box--img__div">
+							<img class="box--img" src="./_assets/imgs/item.jpg" alt="course">
 						</div>
 						<div class="box--content">
-							<div class="box--content--title"></div>
-							<div class="box--content--time"></div>
-							<div class="box--content--cost"></div>
+							<div class="box--content--title">اردوی تفریحی سیاحتی</div>
+							<div class="box--content--time-cost">
+								<div class="box--content--time">مدت زمان: 30 ساعت</div>
+								<div class="box--content--cost">25000 تومان</div>
+							</div>
 						</div>
 						<div class="box--date">
-							<div class="box--date__start"></div>
-							<div class="box--date__end"></div>
+							<div class="box--date__start"> از: 04/05/95</div>
+							<div class="box--date__end">تا: 04/05/95</div>
 						</div>
 						<div class="box--logo">
 							<img src="./_assets/imgs/box-logo.png" alt="" class="box--logo--img">
 						</div>
 					</div>
 					<div class="terms--contents--item">
-						<div class="box--img">
-							<img src="./_assets/imgs/item.jpg" alt="course">
+						<div class="box--img__div">
+							<img class="box--img" src="./_assets/imgs/item.jpg" alt="course">
 						</div>
 						<div class="box--content">
-							<div class="box--content--title"></div>
-							<div class="box--content--time"></div>
-							<div class="box--content--cost"></div>
+							<div class="box--content--title">اردوی تفریحی سیاحتی</div>
+							<div class="box--content--time-cost">
+								<div class="box--content--time">مدت زمان: 30 ساعت</div>
+								<div class="box--content--cost">25000 تومان</div>
+							</div>
 						</div>
 						<div class="box--date">
-							<div class="box--date__start"></div>
-							<div class="box--date__end"></div>
+							<div class="box--date__start"> از: 04/05/95</div>
+							<div class="box--date__end">تا: 04/05/95</div>
 						</div>
 						<div class="box--logo">
 							<img src="./_assets/imgs/box-logo.png" alt="" class="box--logo--img">
@@ -270,7 +290,7 @@
 			<div class="permission">
 				<div class="permission--content">
 					<p>
-
+لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد استفاده قرار گیرد.
 					</p>
 				</div>
 				<div class="permission--logo">

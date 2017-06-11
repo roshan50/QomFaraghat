@@ -107,11 +107,12 @@ header{
 	/*border: 1px solid purple;*/
 }
 .wraper{
-	width: 1200px;
+	width: 965px;
 }
 .search{
 	/*border: 1px solid red;*/
-	background-color: lightgray;
+	background-color: #e7e7e7;
+	border-radius: 5px;
 }
 .search--top-bar{
 	display: flex;
@@ -119,7 +120,7 @@ header{
 }
 .search--input__div{
 	width: 100%;
-	box-shadow: 1px 0px 5px #c2c2c2;
+	box-shadow: 1px 5px 3px #c2c2c2;
 	border-radius: 5px;
 }
 .search--input{
@@ -131,7 +132,7 @@ header{
 	padding-right: 20px;
 	font-family: iransans;
 	font-size: 21px;
-	font-weight: 700;
+	font-weight: 500;
 }
 .search--icon{
 	position: absolute;
@@ -148,7 +149,7 @@ header{
 }
 .search--inner-content{
 	display: inline-flex;
-	padding: 15px;
+	/*padding: 15px;*/
 	box-shadow: 1px 0px 5px #c2c2c2;
 	border-radius: 5px;
 	width: 100%;
@@ -156,15 +157,18 @@ header{
 .search--inner-title{
 	border-bottom: 1px solid gray;
 	font-family: iransans;
-	font-size: 20px;
-	font-weight: 700;
+	font-size: 19px;
+	font-weight: 500;
 }
 .search--gender{
 	/*border: 1px solid red;*/
-	padding: 25px;
-	width: 25%;
+	padding: 20px;
+	width: 20%;
 }
 
+.search--radio__audiance{
+	/*display: flex;*/
+}
 
 
 input[type="radio"] {
@@ -172,8 +176,10 @@ input[type="radio"] {
 }
 
 input[type="radio"] + label {
-    color:gray;
+    color:#5c5c5c;
     font-family:iransans;
+		margin-left: 35px;
+		margin-top: 10px;
 }
 
 input[type="radio"] + label span {
@@ -185,11 +191,14 @@ input[type="radio"] + label span {
     /*background:url(./_assets/imgs/check_radio_sheet.png) -38px top no-repeat;*/
 		background:url(./_assets/imgs/checkbox_unchecked.png) no-repeat;
 		cursor:pointer;
+		background-size: 100% 100%;
 }
 
 input[type="radio"]:checked + label span {
     /*background:url(./_assets/imgs/check_radio_sheet.png) -57px top no-repeat;*/
 		background:url(./_assets/imgs/checkbox_checked.png) no-repeat;
+		background-size: 100% 100%;
+
 }
 
 .radio--row{
@@ -199,37 +208,57 @@ input[type="radio"]:checked + label span {
 }
 .search--audiance{
 	/*border: 1px solid pink;*/
-	padding: 25px;
-	width: 25%;
+	padding: 20px;
+	width: 30%;
 }
 .search--plan{
 	/*border: 1px solid blue;*/
-	padding: 25px;
-	width: 25%;
+	padding: 20px;
+	width: 26%;
+}
+.search--plan--select{
+	margin-top: 10px;
+}
+.search--select{
+	font-family:iransans;
+	width: 208px;
+	height: 30px;
+	border:none;
+	border-radius: 5px;
+	padding-right: 10px;
 }
 .search--organ{
 	/*border: 1px solid yellow;*/
-	padding: 25px;
-	width: 25%;
+	padding: 20px;
+	width: 26%;
+}
+.search--input__organ{
+	border: none;
+	width: 210px;
+	height: 33px;
+	border-radius: 5px;
+	padding: 10px;
+	margin-top: 10px;
+	font-family:iransans;
 }
 
 .terms--title{
 	font-family: iransans;
 	font-size: 20px;
-	padding: 20px 2px;
+	padding: 45px 2px 25px 0;
 }
 .terms--contents {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
 	/*border: 1px solid blue;*/
 
 }
 .terms--contents--item{
 	/*border: 1px solid orange;*/
-	width: 313px;
-	height: 350px;
-	margin: 20px 10px;
+	width: 32%;
+	height: 345px;
+	margin-bottom: 20px;
 	box-shadow: 1px 0px 5px #c2c2c2;
 	border-radius: 5px;
 	position: relative;
@@ -243,41 +272,49 @@ input[type="radio"]:checked + label span {
 .box--content{
 	border: 1px solid lightgray;
 	width: 100%;
-	height: 130px;
+	height: 115px;
 	font-family: iransans;
 	padding: 10px;
 }
+.box--img{
+	border-radius: 5px;
+}
 .box--content--title{
 	font-size: 20px;
-	color: blue;
+	color: #3d82aa;
+	margin-top:15px;
+	margin-bottom:25px;
+
 }
 .box--content--time-cost{
 	display: flex;
 	position: relative;
+	margin-bottom:12px;
 }
 .box--content--cost{
 	position: absolute;
-	left: 2px
-		/*color: green;*/
+	left: 2px;
+	color: green;
+	font-family: B Yekan Regular;
 }
 .box--date{
-	background-color: lightgray;
+	background-color: #ebebeb;
 	box-shadow: 1px 0px 5px #c2c2c2;
-	border-radius: 0 5px 0 5px;
+	border-radius: 0 5px 5px 0;
 	width: 100%;
-	height: 30px;
+	height: 40px;
 	display: flex;
-
+	font-family: B Yekan Regular;
 }
 .box--date__start{
-	border: 1px solid gray;
+	border: 1px solid #e1e1e1;
 	border-radius: 0 0 5px 0;
 	width: 50%;
 	text-align: center;
 	padding-top: 5px;
 }
 .box--date__end{
-	border: 1px solid gray;
+	border: 1px solid #e1e1e1;
 	border-radius: 0 0 0 5px;
 	width: 50%;
 	text-align: center;
@@ -303,6 +340,8 @@ input[type="radio"]:checked + label span {
 .terms--arrows{
 	display: flex;
 	justify-content: center;
+	margin-bottom: 67px;
+	margin-top: 28px;
 }
 
 footer{
@@ -310,9 +349,11 @@ footer{
 	justify-content: center;
 }
 .permission{
-	background-color: lightgray;
-	/*width: 1200px;*/
+	background-color: #ebebeb;
+	padding: 35px;
 	position: relative;
+	font-family: iransans;
+	display: flex;
 }
 .permission--logo{
 	/*position: absolute;*/
@@ -320,6 +361,7 @@ footer{
 .copy{
 	display: flex;
 	position: relative;
+	font-family: iransans;
 }
 .copy--navac{
 	display: flex;
@@ -328,53 +370,21 @@ footer{
 	padding: 2px;
 }
 .navac--info{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	padding: 5px;
 	position: relative;
+	/*font-family: Myriad Arabic Bold;*/
+	font-size: 12px;
 }
 .navac--info__en{
-	position: absolute;
 	left:2px;
-
+	/*font-family: Arial Regular;*/
+	font-size: 11px;
 }
-
-
-.squaredFour {
-  width: 20px;
-  position: relative;
-  margin: 20px auto;
-  label {
-    width: 20px;
-    height: 20px;
-    cursor: pointer;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background: #fcfff4;
-    background: linear-gradient(top, #fcfff4 0%, #dfe5d7 40%, #b3bead 100%);
-    border-radius: 4px;
-    box-shadow: inset 0px 1px 1px white, 0px 1px 3px rgba(0,0,0,0.5);
-    &:after {
-      content: '';
-      width: 9px;
-      height: 5px;
-      position: absolute;
-      top: 4px;
-      left: 4px;
-      border: 3px solid #333;
-      border-top: none;
-      border-right: none;
-      background: transparent;
-      opacity: 0;
-      transform: rotate(-45deg);
-    }
-    &:hover::after {
-      opacity: 0.5;
-    }
-  }
-  input[type=radio] {
-    visibility: hidden;
-    &:checked + label:after {
-      opacity: 1;
-    }
-  }
+.navac-logo{
+	margin-top: 5px;
+	margin-right: 25px;
+	margin-left: 0;
 }
